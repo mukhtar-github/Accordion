@@ -9,7 +9,7 @@ function App() {
     <main>
       <div className='container'>
         <h3>questions and answers about login</h3>
-        <section>
+        <section className='info'>
           {questions.map((question) => {
             return (
               <SingleQuestion key={question.id} {...question}></SingleQuestion>
@@ -19,6 +19,6 @@ function App() {
       </div>
     </main>
   );
-}
+};
 
 export default App;
